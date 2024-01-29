@@ -1,0 +1,15 @@
+tqdm
+ninja
+transformers
+accelerate
+diffusers==0.21.4
+open3d
+tetgen
+pymeshfix
+trimesh
+omegaconf
+triton
+mediapipe
+controlnet-aux==0.0.7
+imageio==2.19.3
+imageio-ffmpeg

@@ -1,0 +1,7 @@
+data
+__pycache__
+results
+*.pth
+Grounded-Segment-Anything
+GroundingDINO
+segment_anything
