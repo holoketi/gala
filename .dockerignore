@@ -1,2 +1,4 @@
-data
-*.pth
+**/data
+**/__pycache__
+**/*.pth
+results
