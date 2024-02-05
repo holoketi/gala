@@ -111,6 +111,7 @@ class StableDiffusion(nn.Module):
             self.text_encoder = CLIPTextModel.from_pretrained(model_key, subfolder="text_encoder",torch_dtype=torch.float32).to(self.device)
             self.unet = UNet2DConditionModel.from_pretrained(model_key, subfolder="unet",torch_dtype=torch.float16 ).to(self.device)
             if is_xformers_available():
+                print('using xformer memory_efficient_attention')
                 self.unet.enable_xformers_memory_efficient_attention()
         else:
             self.pipe_single_step = SingleStepWrapper(self.model_key, self.use_inpaint, 

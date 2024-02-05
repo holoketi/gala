@@ -44,12 +44,3 @@ rm ./deformer/data/scarf_utilities.zip
 # Generate tetrahedral grid
 python utils/generate_tets.py
 rm cube.obj
-
-# xFormers
-# git clone https://github.com/facebookresearch/xformers.git
-# cd xformers
-# echo "numpy" > requirements.txt
-# git submodule update --init --recursive
-# python setup.py install
-# cd ..
-# rm -rf xformers
